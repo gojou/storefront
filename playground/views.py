@@ -1,4 +1,4 @@
-# Defines request/response handlers for this Django implementation
+# Defines request handlers for Django implementation
 
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -11,4 +11,8 @@ def say_hello(request) :
     # return HttpResponse('Hello Multiverse!')
     
     # Less boring. Look at the input and output parameters. "request" -> return object
-    return render(request,'hello.html',{'name':'you sexy thing'})
+    return render(request,'hello.html'
+                # Testing testing - Pattern success!
+                
+                #  , {'name': 'Chaos'}
+                  )
