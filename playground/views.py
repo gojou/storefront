@@ -2,7 +2,7 @@
 
 from django.shortcuts import render
 from django.http import HttpResponse
-
+# from django.http import *
 
 # Create your views here.
 
@@ -11,4 +11,4 @@ def say_hello(request) :
     # return HttpResponse('Hello Multiverse!')
     
     # Less boring. Look at the input and output parameters. "request" -> return object
-    return render(request,'hello.html',{'name':'Gimp'})
+    return render(request,'hello.html',{'name':'you sexy thing'})
